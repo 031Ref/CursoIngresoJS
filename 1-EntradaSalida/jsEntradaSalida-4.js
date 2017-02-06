@@ -4,6 +4,8 @@
 */
 function Mostar()
 {
-	
+	var nombre;
+	nombre=prompt("This is not an anthem,");
+	document.getElementById("elNombre").value=nombre;
 }
 
