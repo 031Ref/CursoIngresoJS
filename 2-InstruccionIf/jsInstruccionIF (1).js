@@ -1,7 +1,7 @@
 function Mostrar()
 {
-//tomo la edad  
-
-
-
-}//FIN DE LA FUNCIÓN
+	var eda=document.getElementById('edad').value;
+	if (eda==15) {
+		alert("Mi niña bonita, mi dulce lucero (...)");
+	}
+}
