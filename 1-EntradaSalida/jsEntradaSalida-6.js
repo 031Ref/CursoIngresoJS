@@ -3,12 +3,9 @@ transformarlos a enteros (parseInt) y Sumarlos.
 Mostar el resulto por medio de "ALERT"*/
 function sumar()
 {
-	var dUno;
-	var dDos;
-	var result;
-	dUno=document.getElementById('numeroUno').value;
-	dDos=document.getElementById("numeroDos").value;
-	result=parseInt(dUno)+parseInt(dDos);
+	var dUno=document.getElementById('numeroUno').value;
+	var dDos=document.getElementById("numeroDos").value;
+	var result=parseInt(dUno)+parseInt(dDos);
 	alert("resultado: "+result);
 }
 
