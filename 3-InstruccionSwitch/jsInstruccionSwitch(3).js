@@ -22,3 +22,12 @@ switch(mesDelAño){
 	break;
 }
 }
+
+/*
+var mesDelAño = document.getElementById('mes').value;
+if (mesDelAño==Febrero) {
+	alert(mesDelAño+":  Este mes no tiene más de 29 días.");
+}else{
+	alert(mesDelAño+": Este mes tiene 30 o más días");
+}
+*/

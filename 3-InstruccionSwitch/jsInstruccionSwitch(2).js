@@ -24,3 +24,14 @@ switch(mesDelAño){
 	break;
 }
 }
+
+/*
+var mesDelAño = document.getElementById('mes').value;
+if(mesDelAño==Enero||Febrero||Marzo||Abril||Mayo||Junio){
+	alert(mesDelAño+": Falta para el invierno.");
+}else if (mesDelAño==Julio||Agosto) {
+	alert(mesDelAño+": Abrigate que hace frio.");
+}else if (mesDelAño==Septiembre||Octubre||Noviembre||Diciembre) {
+	alert(mesDelAño+": Ya pasamos el frio, ahora calor!!!.");
+}
+*/
