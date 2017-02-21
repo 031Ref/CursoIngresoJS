@@ -6,11 +6,26 @@ a su opción  y le informaremos si ganó, empató o perdió.
 */
 var eleccionMaquina;
 var rachaV=0;
+var maxV=0;
 var rachaP=0;
+var maxP=0;
 var rachaE=0;
+var maxE=0;
 function comenzar()
 {
 	eleccionMaquina=Math.floor((Math.random() * 3) + 1);
+	console.log(eleccionMaquina)
+}
+function racha(){
+	if (rachaV>maxV) {
+		maxV=rachaV;
+	}
+	if (rachaP>maxP) {
+		maxP=rachaP;
+	}
+	if (rachaE>maxE) {
+		maxE=rachaE;
+	}
 }
 function piedra()
 {
@@ -19,18 +34,22 @@ function piedra()
 		rachaE++;
 		rachaP=0;
 		rachaV=0;
+		racha();
 	}else if (eleccionMaquina==2) {
 		alert("Usted perdió");
 		rachaP++;
 		rachaE=0;
 		rachaV=0;
+		racha();
 	}else if (eleccionMaquina==3) {
 		alert("Usted ganó");
 		rachaV++;
 		rachaP=0;
 		rachaE=0;
+		racha();
 	}
-	console.log(rachaV,rachaE,rachaP);
+	console.log(rachaV,rachaE,rachaP,maxV,maxE,maxP);
+	comenzar();
 }
 function papel()
 {
@@ -40,18 +59,22 @@ function papel()
 		rachaE++;
 		rachaP=0;
 		rachaV=0;
+		racha();
 	}else if (eleccionMaquina==3) {
 		alert("Usted perdió");
 		rachaP++;
 		rachaE=0;
 		rachaV=0;
+		racha();
 	}else if (eleccionMaquina==1) {
 		alert("Usted ganó");
 		rachaV++;
 		rachaP=0;
 		rachaE=0;
+		racha();
 	}
-	console.log(rachaV,rachaE,rachaP);
+	console.log(rachaV,rachaE,rachaP,maxV,maxE,maxP);
+	comenzar();
 }
 function tijera()
 {
@@ -61,16 +84,20 @@ function tijera()
 		rachaE++;
 		rachaP=0;
 		rachaV=0;
+		racha();
 	}else if (eleccionMaquina==1) {
 		alert("Usted perdió");
 		rachaP++;
 		rachaE=0;
 		rachaV=0;
+		racha();
 	}else if (eleccionMaquina==2) {
 		alert("Usted ganó");
 		rachaV++;
 		rachaP=0;
 		rachaE=0;
+		racha();
 	}
-	console.log(rachaV,rachaE,rachaP);
+	console.log(rachaV,rachaE,rachaP,maxV,maxE,maxP);
+	comenzar();
 }
